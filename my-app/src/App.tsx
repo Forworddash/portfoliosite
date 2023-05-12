@@ -7,16 +7,17 @@ import About from "./components/about";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
+import './index.css'; // Import Tailwind CSS
 
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div>
-        <div>
+        <div className="">
           <Navbar></Navbar>
         </div>
 
-        <div>
+        <div className="">
           <About></About>
         </div>
 
