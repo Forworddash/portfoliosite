@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className=''>
-      <ol className='flex'>
+    <nav className='p-6'>
+      <ol className='flex justify-evenly'>
         <li className=''>
           <Link to="/">Home</Link>
         </li>

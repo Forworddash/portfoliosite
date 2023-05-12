@@ -12,12 +12,12 @@ import './index.css'; // Import Tailwind CSS
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <div>
-        <div className="">
+      <div className="bg-silver">
+        <div className=''>
           <Navbar></Navbar>
         </div>
 
-        <div className="">
+        <div>
           <About></About>
         </div>
 
