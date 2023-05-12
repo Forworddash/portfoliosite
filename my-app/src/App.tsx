@@ -5,14 +5,14 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/navbar";
 import About from "./components/about";
 import Projects from "./components/projects";
-import Contact from "./components/contact";
+// import Contact from "./components/contact";
 import Footer from "./components/footer";
 import './index.css'; // Import Tailwind CSS
 
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <div className="bg-silver">
+      <div className="">
         <div className=''>
           <Navbar></Navbar>
         </div>
@@ -26,7 +26,7 @@ function App() {
         </div>
 
         <div>
-          <Contact></Contact>
+          {/* <Contact></Contact> */}
         </div>
 
         <div>
