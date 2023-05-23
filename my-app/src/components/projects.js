@@ -1,5 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
+import project1 from "../images/React.jpg";
 
 const Projects: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const Projects: React.FC = () => {
           whileTap={{ scale: 0.95 }}
         >
           <h2 className="text-lg font-bold mb-2">Project 1</h2>
+          {/* <img src={project1}></img> */}
           <p className="text-gray-700 text-base">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id
             magna consequat, cursus nulla sit amet, accumsan velit. Quisque

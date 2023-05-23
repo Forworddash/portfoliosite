@@ -10,7 +10,7 @@ const NavItem: React.FC<NavItemProps> = ({ link, label }) => {
   return (
     <li className="mr-6">
       <Link
-        className="text-gray-600 hover:text-gray-800 font-medium text-sm"
+        className="text-white hover:text-gray-800 font-medium text-sm"
         to={link}
       >
         {label}
@@ -28,9 +28,9 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-white p-6">
+    <nav className="flex items-center justify-between flex-wrap bg-blue-450 p-6 ">
       <div className="flex items-center flex-shrink-0 mr-6">
-        <span className="font-semibold text-xl tracking-tight">My Website</span>
+        <span className="font-semibold text-xl tracking-tight text-white hover:text-black">My Website</span>
       </div>
       <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div className="text-sm lg:flex-grow">
