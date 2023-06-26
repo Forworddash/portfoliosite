@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto p-6" id='contact'>
+    <div className="container m-auto p-6" id='contact'>
       <h1 className="text-3xl text-center font-bold mb-4">Contact</h1>
       <div className="xl:mx-48 lg:mx-48 md:mx-36">
         <form onSubmit={handleSubmit}>
@@ -36,7 +36,7 @@ const Contact: React.FC = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full p-2 border border-gray-300 rounded"
+                className="w-full p-2 border border-gray-300 rounded text-black"
               />
             </div>
             <div>
@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full p-2 border border-gray-300 rounded"
+                className="w-full p-2 border border-gray-300 rounded text-black"
               />
             </div>
             <div>
@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full p-2 border border-gray-300 rounded"
+                className="w-full p-2 border border-gray-300 rounded text-black"
               ></textarea>
             </div>
             <button

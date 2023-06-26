@@ -1,41 +1,73 @@
 import React from 'react';
+import Document from '../docs/test.pdf'
 
-interface NavItemProps {
-  link: string;
-  label: string;
-}
 
-const NavItem: React.FC<NavItemProps> = ({ link, label }) => {
+const Navbar: React.FC = () => {
+
+
   return (
-    <li className="my-2">
-      <a
-        className="text-white hover:text-gray-800 font-medium text-sm"
-        href={link}
-      >
-        {label}
-      </a>
-    </li>
+    <nav className="fixed w-full bg-black opacity-75 z-10">
+      <div className="flex items-center justify-evenly">
+
+        <ul className="flex">
+
+          <li className="my-2">
+            <a
+              className="text-white hover:text-gray-800 font-medium text-sm px-4 py-2 rounded-lg transition-colors duration-300 flex items-center"
+              href="#about"
+              rel="noopener noreferrer"
+            >
+              {/* <FontAwesomeIcon icon={} className="mr-2" /> */}
+              About
+            </a>
+          </li>
+          <li className="my-2">
+            <a
+              className="text-white hover:text-gray-800 font-medium text-sm px-4 py-2 rounded-lg transition-colors duration-300 flex items-center"
+              href="#portfolio"
+              rel="noopener noreferrer"
+            >
+              {/* <FontAwesomeIcon icon={} className="mr-2" /> */}
+              Portfolio
+            </a>
+          </li>
+          <li className="my-2">
+            <a
+              className="text-white hover:text-gray-800 font-medium text-sm px-4 py-2 rounded-lg transition-colors duration-300 flex items-center"
+              href="#contact"
+              rel="noopener noreferrer"
+            >
+              {/* <FontAwesomeIcon icon={} className="mr-2" /> */}
+              Contact
+            </a>
+          </li>
+          <li className="my-2">
+            <a
+              className="text-white hover:text-gray-800 font-medium text-sm px-4 py-2 rounded-lg transition-colors duration-300 flex items-center"
+              href="https://github.com/Forworddash"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {/* <FontAwesomeIcon icon={} className="mr-2" /> */}
+              GitHub
+            </a>
+          </li>
+          <li className="my-2">
+            <a
+              className="text-white hover:text-gray-800 font-medium text-sm px-4 py-2 rounded-lg transition-colors duration-300 flex items-center"
+              href={Document}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {/* <FontAwesomeIcon icon={} className="mr-2" /> */}
+              Resume
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
   );
 };
 
-const SidebarNav: React.FC = () => {
-  const navItems: NavItemProps[] = [
-    { label: 'Home', link: '#home' },
-    { label: 'About', link: '#about' },
-    { label: 'Contact', link: '#contact' },
-    { label: 'Projects', link: '#projects' },
-  ];
-
-  return (
-    <div className="w-64 flex flex-col items-center">
-      <h1 className="text-xl font-bold mt-8 mb-4">My Website</h1>
-      <ul className="flex flex-col items-start">
-        {navItems.map((item, index) => (
-          <NavItem key={index} link={item.link} label={item.label} />
-        ))}
-      </ul>
-    </div>
-  );
-};
-
-export default SidebarNav;
+export default Navbar;

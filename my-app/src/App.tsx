@@ -15,7 +15,7 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div
-        className="bg-gradient-to-b from-blue-500 to-purple-500 flex flex-col text-white" id="home"
+        className="bg-gradient-to-b from-blue-500 to-purple-500 flex flex-col text-white space-y-18"
       >
         <div>
           <Navbar />
