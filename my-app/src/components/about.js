@@ -4,7 +4,7 @@ const About: React.FC = () => {
   return (
     <div className="container mx-auto p-6" id='about'>
       <h1 className="text-3xl text-center font-bold mb-4">About</h1>
-      <p className="text-gray-700 text-lg leading-7">
+      <p className="text-lg leading-7">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id magna
         consequat, cursus nulla sit amet, accumsan velit. Quisque interdum
         sagittis urna. Aliquam erat volutpat. Fusce dapibus, odio eu pulvinar
@@ -12,7 +12,7 @@ const About: React.FC = () => {
         ipsum. Integer non dolor ac tellus imperdiet finibus. Nullam quis
         pulvinar nulla, a tempor turpis.
       </p>
-      <p className="text-gray-700 text-lg leading-7 mt-4">
+      <p className="text-lg leading-7 mt-4">
         Proin sollicitudin, felis vitae luctus lobortis, velit nulla laoreet
         erat, vel feugiat ex purus eu dolor. Vivamus vel dictum nunc. Nullam
         tristique turpis a metus molestie laoreet. Duis sed felis est. Sed
