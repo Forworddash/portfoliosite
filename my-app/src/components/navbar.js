@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 interface NavItemProps {
   link: string;
@@ -8,41 +7,35 @@ interface NavItemProps {
 
 const NavItem: React.FC<NavItemProps> = ({ link, label }) => {
   return (
-    <li className="mr-6">
-      <Link
+    <li className="my-2">
+      <a
         className="text-white hover:text-gray-800 font-medium text-sm"
-        to={link}
+        href={link}
       >
         {label}
-      </Link>
+      </a>
     </li>
   );
 };
 
-const Navbar: React.FC = () => {
+const SidebarNav: React.FC = () => {
   const navItems: NavItemProps[] = [
-    { label: 'Home', link: '/' },
-    { label: 'About', link: '/about' },
-    { label: 'Contact', link: '/contact' },
-    { label: 'Projects', link: '/projects' },
+    { label: 'Home', link: '#home' },
+    { label: 'About', link: '#about' },
+    { label: 'Contact', link: '#contact' },
+    { label: 'Projects', link: '#projects' },
   ];
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-blue-450 p-6 ">
-      <div className="flex items-center flex-shrink-0 mr-6">
-        <span className="font-semibold text-xl tracking-tight text-white hover:text-black">My Website</span>
-      </div>
-      <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div className="text-sm lg:flex-grow">
-          <ul className="flex justify-center lg:justify-end">
-            {navItems.map((item, index) => (
-              <NavItem key={index} link={item.link} label={item.label} />
-            ))}
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div className="w-64 flex flex-col items-center">
+      <h1 className="text-xl font-bold mt-8 mb-4">My Website</h1>
+      <ul className="flex flex-col items-start">
+        {navItems.map((item, index) => (
+          <NavItem key={index} link={item.link} label={item.label} />
+        ))}
+      </ul>
+    </div>
   );
 };
 
-export default Navbar;
+export default SidebarNav;

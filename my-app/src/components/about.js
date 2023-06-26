@@ -2,8 +2,8 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <div className="container mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-4">About</h1>
+    <div className="container mx-auto p-6" id='about'>
+      <h1 className="text-3xl text-center font-bold mb-4">About</h1>
       <p className="text-gray-700 text-lg leading-7">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id magna
         consequat, cursus nulla sit amet, accumsan velit. Quisque interdum
