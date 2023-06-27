@@ -15,21 +15,21 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div
-        className="bg-gradient-to-b from-blue-500 to-purple-500 flex flex-col text-white space-y-18"
+        className="bg-gradient-to-b from-blue-500 to-purple-500 flex flex-col text-white"
       >
-        <div>
+        <div className="">
           <Navbar />
         </div>
 
-        <div>
+        <div className="flex items-center justify-center h-screen" id='about'>
           <About />
         </div>
 
-        <div>
+        <div className="flex items-center justify-center h-screen" id='portfolio'>
           <Portfolio />
         </div>
 
-        <div>
+        <div className="flex items-center justify-center h-screen" id='contact'>
           <Contact />
         </div>
 

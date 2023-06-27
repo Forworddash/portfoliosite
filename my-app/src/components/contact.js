@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="container m-auto p-6" id='contact'>
+    <div className="container m-auto p-6">
       <h1 className="text-3xl text-center font-bold mb-4">Contact</h1>
       <div className="xl:mx-48 lg:mx-48 md:mx-36">
         <form onSubmit={handleSubmit}>
