@@ -42,7 +42,7 @@ const Portfolio: React.FC = () => {
   };
 
   return (
-    <div className="m-auto p-6 container" id="portfolio">
+    <div className="m-auto p-6 container">
       <h1 className="text-3xl text-center font-bold mb-4">Portfolio</h1>
       <div className="flex justify-center mb-4">
         <button
