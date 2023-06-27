@@ -7,12 +7,12 @@ const About: React.FC = () => {
       <div>
         <h1 className="text-3xl text-center font-bold mb-4">About</h1>
       </div>
-      <div className='flex flex-col'>
-        <div className='basis-1/2'>
+      <div className='grid grid-cols-2'>
+        <div className='m-auto'>
           <img src='https://cdn.rack-a-tiers.com/wp-content/uploads/2022/10/03100805/Samuel-B-Second-Version.jpg' alt='profile picture' className='w-64 h-auto rounded-full'></img>
         </div>
 
-        <div className='basis-1/2'>
+        <div className=''>
           <p className="text-lg leading-7">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id magna
             consequat, cursus nulla sit amet, accumsan velit. Quisque interdum
