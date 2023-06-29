@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
   return (
     <div className="container m-auto p-6">
       <h1 className="text-3xl text-center font-bold mb-4">Contact</h1>
-      <div className="xl:mx-48 lg:mx-48 md:mx-36">
+      <div className="xl:mx-48 lg:mx-48 md:mx-36 rounded-2xl m-auto shadow-2xl p-8">
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 gap-4">
             <div>
