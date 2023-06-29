@@ -15,8 +15,8 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="">
-          <Navbar />
-        </div>
+        <Navbar />
+      </div>
       <div
         // className="bg-gradient-to-b from-blue-500 to-purple-500 flex flex-col"
         style={{
@@ -24,19 +24,19 @@ function App() {
         }}
         className="space-y-12"
       >
-        
+
 
         {/* <div className="flex items-center justify-center h-screen" id='about'> */}
-        <div className="m-auto" id='about'>
-          <About />
+        <div className="py-24" id='about'>
+            <About />
         </div>
 
-        <div className="" id='portfolio'>
-          <Portfolio />
+        <div className="py-12" id='portfolio'>
+            <Portfolio />
         </div>
 
-        <div className="" id='contact'>
-          <Contact />
+        <div className="py-12" id='contact'>
+            <Contact />
         </div>
 
         <div>
