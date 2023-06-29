@@ -3,7 +3,7 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <div className="container m-auto p-6" id=''>
+    <div className="container m-auto p-6">
       <div>
         <h1 className="text-3xl text-center font-bold mb-4">About</h1>
       </div>
