@@ -67,7 +67,7 @@ const Portfolio: React.FC = () => {
           React
         </button>
       </div>
-      <div>
+      <div className="rounded-2xl m-auto shadow-2xl p-8">
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
           initial={{ opacity: 0 }}
