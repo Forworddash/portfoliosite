@@ -158,7 +158,7 @@ const Portfolio: React.FC = () => {
   return (
     <div className="m-auto p-6 container">
       <h1 className="text-3xl text-center font-bold mb-4">Portfolio</h1>
-      <div className="flex justify-center mb-4">
+      <div className="flex justify-center mb-4 space-x-12">
         <button
           className={`btn btn-primary mr-2 ${activeView === "all" ? "btn-active" : ""
             }`}
@@ -239,4 +239,3 @@ const Portfolio: React.FC = () => {
 };
 
 export default Portfolio;
-

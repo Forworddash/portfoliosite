@@ -18,15 +18,11 @@ function App() {
         <Navbar />
       </div>
       <div
-        // className="bg-gradient-to-b from-blue-500 to-purple-500 flex flex-col"
         style={{
-          background: "linear-gradient(to bottom, #FF8885, #E9EAAC)",
+          background: "linear-gradient(to bottom, #FF8885, #F2E2D0, #E9EAAC)",
         }}
         className="space-y-12"
       >
-
-
-        {/* <div className="flex items-center justify-center h-screen" id='about'> */}
         <div className="py-24" id='about'>
             <About />
         </div>
