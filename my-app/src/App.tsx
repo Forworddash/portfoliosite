@@ -6,11 +6,10 @@ import Navbar from "./components/navbar";
 import About from "./components/about";
 import Footer from "./components/footer";
 import Contact from "./components/contact";
-import "./index.css"; // Import Tailwind CSS
+import "./index.css"; 
 import Portfolio from "./components/portfolio";
 
 function App() {
-  // const [breath, setBreath] = useState(false);
 
   return (
     <Router basename={process.env.PUBLIC_URL}>
