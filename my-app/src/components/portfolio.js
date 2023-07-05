@@ -111,7 +111,7 @@ import Image2 from '../images/dawdadw.png';
 import Image3 from '../images/delldock.jpg';
 import Image4 from '../images/inventorscorner.png';
 import Image5 from '../images/phone.png';
-import Image6 from '../images/step1.png';
+import Image6 from '../images/signin.png';
 
 const Portfolio: React.FC = () => {
   const [activeView, setActiveView] = useState("all");
@@ -137,7 +137,7 @@ const Portfolio: React.FC = () => {
     { id: 3, title: "React Calculator", category: "react", image: Image3, description: "Project 3 description" },
     { id: 4, title: "Python Functions", category: "python", image: Image4, description: "Project 4 description" },
     { id: 5, title: "Ecommerce Site #1", category: "react", image: Image5, description: "Project 5 description" },
-    { id: 6, title: "Ecommerce Site #2", category: "react", image: Image6, description: "Project 6 description" },
+    { id: 6, title: "Python form", category: "python", image: Image6, description: "Project 6 description" },
     // Add more projects and their respective details here
   ];
 
