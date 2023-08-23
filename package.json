@@ -24,7 +24,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node index.tsx",
     "build": "react-scripts build",
     "build:digitalocean": "npm start"
   },
