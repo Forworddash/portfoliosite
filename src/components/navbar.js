@@ -1,5 +1,5 @@
 import React from 'react';
-import Document from '../docs/test.pdf'
+import Document from '../docs/SamuelBakerResume.docx'
 
 
 const Navbar: React.FC = () => {
