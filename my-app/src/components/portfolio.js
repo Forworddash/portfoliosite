@@ -110,8 +110,8 @@ import Image1 from "../images/rackatiers.png";
 import Image2 from "../images/portfoliosite.png";
 // import Image3 from '../images/delldock.jpg';
 import Image4 from "../images/pythoncodechallenges.png";
-import Image5 from "../images/phone.png";
-import Image6 from "../images/step1.png";
+import Image5 from "../images/snakegame.png";
+import Image6 from "../images/biltong.png";
 import Image7 from "../images/tekelite.png";
 
 const Portfolio: React.FC = () => {
@@ -138,7 +138,7 @@ const Portfolio: React.FC = () => {
       title: "Rack-a-Tiers Website",
       category: "react",
       image: Image1,
-      description: "<a className='bold' href='https://www.rack-a-tiers.ca/' target='_blank' rel='noopener noreferrer'>Rack-A-Tiers website</a>. My coworker and I were tasked with creating a new website for the company. We used React / HTML / JavaScript / Tailwind CSS to create a responsive ecommerce website that is easy to navigate and looks great on all devices. Check out the website <a className='bold' href='https://www.rack-a-tiers.ca/' target='_blank' rel='noopener noreferrer'>Here</a>",
+      description: "<a className='bold' href='https://www.rack-a-tiers.ca/' target='_blank' rel='noopener noreferrer'>Rack-A-Tiers website</a>. My coworker and I were tasked with creating a new website for the company. We used React / HTML / JavaScript / Tailwind CSS to create a responsive ecommerce website that is easy to navigate and looks great on all devices. Check out the website <a className='bold' href='https://www.rack-a-tiers.ca/' target='_blank' rel='noopener noreferrer'>Here</a>.",
     },
     {
       id: 2,
@@ -146,7 +146,7 @@ const Portfolio: React.FC = () => {
       category: "react",
       image: Image2,
       description:
-        "Created mappings in python to handle x12 documents in a company odoo backend. A partner company and their branches submit an EDI 850 document and the python mapping will translate it into a purchase order in the odoo system. After the customer service team validates the order, the 810 mapping will take the created purchase order and convert it into a invoice to send back to the purchaser in x12 format. This helps to save a lot of manual labor doing data entry and gets rid of many human errors. ",
+        "This website was made with React / HTML / JavaScript / Tailwind CSS. Check out the code on Github <a href='https://github.com/Forworddash/portfoliosite' target='_blank' rel='noopener noreferrer'>Here</a>.",
     },
     {
       id: 3,
@@ -154,7 +154,7 @@ const Portfolio: React.FC = () => {
       category: "Unity/C#",
       image: Image7,
       description:
-        "Received Figma designs from the UI designer and implemented the designs in the Teke Lite app. I worked with the Unity engine and wrote C# code for the sound effects and transitions to different scenes. Check out their website  <a className='bold' href='https://teke.io/' target='_blank' rel='noopener noreferrer'>Here</a>",
+        "Received Figma designs from the UI designer and implemented the designs in the Teke Lite app. I worked with the Unity engine and wrote C# code for the sound effects and transitions to different scenes. Check out their website  <a className='bold' href='https://teke.io/' target='_blank' rel='noopener noreferrer'>Here</a>.",
     },
     {
       id: 4,
@@ -165,25 +165,25 @@ const Portfolio: React.FC = () => {
     },
     {
       id: 5,
-      title: "Ecommerce Site #1",
-      category: "react",
+      title: "Snake Game",
+      category: "javascript",
       image: Image5,
-      description: "Project 5 description",
+      description: "The 'Snake Game' project leverages HTML, CSS, and JavaScript to create an interactive snake game experience. Players control a snake as it maneuvers through the game grid to collect apples and grow longer. The project showcases the use of canvas rendering, collision detection, and dynamic gameplay mechanics to recreate the classic Snake game in a web browser.",
     },
     {
       id: 6,
-      title: "Ecommerce Site #2",
+      title: "Biltong Landing Page",
       category: "react",
       image: Image6,
-      description: "Project 6 description",
+      description: "Wrote python functions for multiple challenges from testing strings for palindromes to finding the biggest number in a list. Check it out on github <a className='bold' href='https://github.com/Forworddash/python-code-challenges' target='_blank' rel='noopener noreferrer'>Here</a>.",
     },
-    {
-      id: 7,
-      title: "Ecommerce Site #2",
-      category: "react",
-      image: Image6,
-      description: "Project 6 description",
-    },
+    // {
+    //   id: 7,
+    //   title: "Ecommerce Site #2",
+    //   category: "react",
+    //   image: Image6,
+    //   description: "Project 6 description",
+    // },
 
     // Add more projects and their respective details here
   ];
@@ -223,6 +223,14 @@ const Portfolio: React.FC = () => {
           onClick={() => handleViewChange("python")}
         >
           Python
+        </button>
+        <button
+          className={`btn btn-primary ${
+            activeView === "javascript" ? "btn-active" : ""
+          }`}
+          onClick={() => handleViewChange("javascript")}
+        >
+          JavaScript
         </button>
         <button
           className={`btn btn-primary ${
