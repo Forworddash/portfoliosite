@@ -17,8 +17,10 @@ function App() {
         <Navbar />
       </div>
       <div
+
+        /* make the background side to side  */
         style={{
-          background: "linear-gradient(to bottom, #FF8885, #F2E2D0, #E9EAAC)",
+          background: "linear-gradient(90deg, #667eea 0%, #764ba2 100%)"
         }}
         className="space-y-12"
       >
