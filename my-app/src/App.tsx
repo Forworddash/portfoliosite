@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/navbar";
 import About from "./components/about";
 import Footer from "./components/footer";
-import Contact from "./components/contact";
+// import Contact from "./components/contact";
 import "./index.css"; 
 import Portfolio from "./components/portfolio";
 
@@ -30,9 +30,9 @@ function App() {
             <Portfolio />
         </div>
 
-        <div className="py-12" id='contact'>
+        {/* <div className="py-12" id='contact'>
             <Contact />
-        </div>
+        </div> */}
 
         <div>
           <Footer />

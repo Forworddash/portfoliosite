@@ -108,10 +108,11 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image1 from '../images/React.jpg';
 import Image2 from '../images/dawdadw.png';
-import Image3 from '../images/delldock.jpg';
+// import Image3 from '../images/delldock.jpg';
 import Image4 from '../images/inventorscorner.png';
 import Image5 from '../images/phone.png';
 import Image6 from '../images/step1.png';
+import Image7 from '../images/tekelite.png';
 
 const Portfolio: React.FC = () => {
   const [activeView, setActiveView] = useState("all");
@@ -133,11 +134,13 @@ const Portfolio: React.FC = () => {
   // project data
   const projects = [
     { id: 1, title: "React App", category: "react", image: Image1, description: "Project 1 description" },
-    { id: 2, title: "EDI Project", category: "python", image: Image2, description: "Project 2 description" },
-    { id: 3, title: "React Calculator", category: "react", image: Image3, description: "Project 3 description" },
+    { id: 2, title: "Python EDI", category: "python", image: Image2, description: "Created mappings in python to handle x12 documents in a company odoo backend. A partner company and their branches submit an EDI 850 document and the python mapping will translate it into a purchase order in the odoo system. After the customer service team validates the order, the 810 mapping will take the created purchase order and convert it into a invoice to send back to the purchaser in x12 format. This helps to save a lot of manual labor doing data entry and gets rid of many human errors. " },
+    { id: 3, title: "Teke Lite App", category: "Unity/C#", image: Image7, description: "Received Figma designs from the UI designer and implemented the designs in the Teke Lite app. I worked with the Unity engine and wrote C# code for the sound effects and transitions to different scenes." },
     { id: 4, title: "Python Functions", category: "python", image: Image4, description: "Project 4 description" },
     { id: 5, title: "Ecommerce Site #1", category: "react", image: Image5, description: "Project 5 description" },
     { id: 6, title: "Ecommerce Site #2", category: "react", image: Image6, description: "Project 6 description" },
+    { id: 7, title: "Ecommerce Site #2", category: "react", image: Image6, description: "Project 6 description" },
+
     // Add more projects and their respective details here
   ];
 
@@ -179,6 +182,13 @@ const Portfolio: React.FC = () => {
           onClick={() => handleViewChange("react")}
         >
           React
+        </button>
+        <button
+          className={`btn btn-primary ${activeView === "Unity/C#" ? "btn-active" : ""
+            }`}
+          onClick={() => handleViewChange("Unity/C#")}
+        >
+          Unity/C#
         </button>
       </div>
       <div className="rounded-2xl m-auto shadow-2xl p-8">
