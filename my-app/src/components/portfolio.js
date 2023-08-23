@@ -108,7 +108,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image1 from "../images/rackatiers.png";
 import Image2 from "../images/portfoliosite.png";
-// import Image3 from '../images/delldock.jpg';
+import Image3 from '../images/aliaskeep.png';
 import Image4 from "../images/pythoncodechallenges.png";
 import Image5 from "../images/snakegame.png";
 import Image6 from "../images/biltong.png";
@@ -146,7 +146,7 @@ const Portfolio: React.FC = () => {
       category: "react",
       image: Image2,
       description:
-        "This website was made with React / HTML / JavaScript / Tailwind CSS. Check out the code on Github <a href='https://github.com/Forworddash/portfoliosite' target='_blank' rel='noopener noreferrer'>Here</a>.",
+        "My portfolio website showcases a collection of diverse projects I've undertaken using technologies such as React, Tailwind CSS, HTML, Unity, C#, Python and JavaScript. It offers a visually engaging platform for visitors to explore my work and learn more about each project's details and technologies involved. Feel free to explore my portfolio and get a glimpse of my coding journey!. Check out the code on Github <a href='https://github.com/Forworddash/portfoliosite' target='_blank' rel='noopener noreferrer'>Here</a>.",
     },
     {
       id: 3,
@@ -175,15 +175,15 @@ const Portfolio: React.FC = () => {
       title: "Biltong Landing Page",
       category: "react",
       image: Image6,
-      description: "Wrote python functions for multiple challenges from testing strings for palindromes to finding the biggest number in a list. Check it out on github <a className='bold' href='https://github.com/Forworddash/python-code-challenges' target='_blank' rel='noopener noreferrer'>Here</a>.",
+      description: "Thor's landing page project is a dynamic web application developed using JavaScript, React, HTML, and Tailwind CSS. Leveraging the power of React's component-based architecture and Tailwind CSS's styling, the project delivers a responsive and aesthetically pleasing user experience. This landing page is designed for my friend Thor as he pursues his business in Biltong, the African dried meat delicacy! Check it out on GitHub <a className='bold' href='https://github.com/Forworddash/Thor-landingpage' target='_blank' rel='noopener noreferrer'>Here</a>.",
     },
-    // {
-    //   id: 7,
-    //   title: "Ecommerce Site #2",
-    //   category: "react",
-    //   image: Image6,
-    //   description: "Project 6 description",
-    // },
+    {
+      id: 7,
+      title: "Alias Keep",
+      category: "javascript",
+      image: Image3,
+      description: "'Alias Keep' is a desktop application built using Electron, Bulma CSS, and JavaScript. The primary purpose of the application is to help users manage and store information related to fake aliases, including details such as fake names, email addresses, phone numbers, and dates of birth. The application features a user-friendly interface with different tabs for managing various aspects as well as a rudimentary login screen.",
+    },
 
     // Add more projects and their respective details here
   ];
@@ -289,7 +289,7 @@ const Portfolio: React.FC = () => {
       {selectedProject && (
         <div className="popout-overlay">
           <div className="popout-container">
-            <div className="popout-content mt-5">
+            <div className="popout-content mt-8">
               <img
                 src={selectedProject.image}
                 alt={selectedProject.title}
