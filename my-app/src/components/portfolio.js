@@ -106,13 +106,13 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Image1 from '../images/React.jpg';
-import Image2 from '../images/dawdadw.png';
+import Image1 from "../images/rackatiers.png";
+import Image2 from "../images/portfoliosite.png";
 // import Image3 from '../images/delldock.jpg';
-import Image4 from '../images/inventorscorner.png';
-import Image5 from '../images/phone.png';
-import Image6 from '../images/step1.png';
-import Image7 from '../images/tekelite.png';
+import Image4 from "../images/pythoncodechallenges.png";
+import Image5 from "../images/phone.png";
+import Image6 from "../images/step1.png";
+import Image7 from "../images/tekelite.png";
 
 const Portfolio: React.FC = () => {
   const [activeView, setActiveView] = useState("all");
@@ -133,13 +133,57 @@ const Portfolio: React.FC = () => {
 
   // project data
   const projects = [
-    { id: 1, title: "React App", category: "react", image: Image1, description: "Project 1 description" },
-    { id: 2, title: "Python EDI", category: "python", image: Image2, description: "Created mappings in python to handle x12 documents in a company odoo backend. A partner company and their branches submit an EDI 850 document and the python mapping will translate it into a purchase order in the odoo system. After the customer service team validates the order, the 810 mapping will take the created purchase order and convert it into a invoice to send back to the purchaser in x12 format. This helps to save a lot of manual labor doing data entry and gets rid of many human errors. " },
-    { id: 3, title: "Teke Lite App", category: "Unity/C#", image: Image7, description: "Received Figma designs from the UI designer and implemented the designs in the Teke Lite app. I worked with the Unity engine and wrote C# code for the sound effects and transitions to different scenes." },
-    { id: 4, title: "Python Functions", category: "python", image: Image4, description: "Project 4 description" },
-    { id: 5, title: "Ecommerce Site #1", category: "react", image: Image5, description: "Project 5 description" },
-    { id: 6, title: "Ecommerce Site #2", category: "react", image: Image6, description: "Project 6 description" },
-    { id: 7, title: "Ecommerce Site #2", category: "react", image: Image6, description: "Project 6 description" },
+    {
+      id: 1,
+      title: "Rack-a-Tiers Website",
+      category: "react",
+      image: Image1,
+      description: "<a className='bold' href='https://www.rack-a-tiers.ca/' target='_blank' rel='noopener noreferrer'>Rack-A-Tiers website</a>. My coworker and I were tasked with creating a new website for the company. We used React / HTML / JavaScript / Tailwind CSS to create a responsive ecommerce website that is easy to navigate and looks great on all devices. Check out the website <a className='bold' href='https://www.rack-a-tiers.ca/' target='_blank' rel='noopener noreferrer'>Here</a>",
+    },
+    {
+      id: 2,
+      title: "This Website",
+      category: "react",
+      image: Image2,
+      description:
+        "Created mappings in python to handle x12 documents in a company odoo backend. A partner company and their branches submit an EDI 850 document and the python mapping will translate it into a purchase order in the odoo system. After the customer service team validates the order, the 810 mapping will take the created purchase order and convert it into a invoice to send back to the purchaser in x12 format. This helps to save a lot of manual labor doing data entry and gets rid of many human errors. ",
+    },
+    {
+      id: 3,
+      title: "Teke Lite App",
+      category: "Unity/C#",
+      image: Image7,
+      description:
+        "Received Figma designs from the UI designer and implemented the designs in the Teke Lite app. I worked with the Unity engine and wrote C# code for the sound effects and transitions to different scenes. Check out their website  <a className='bold' href='https://teke.io/' target='_blank' rel='noopener noreferrer'>Here</a>",
+    },
+    {
+      id: 4,
+      title: "Python Functions",
+      category: "python",
+      image: Image4,
+      description: "Wrote python functions for multiple challenges from testing strings for palindromes to finding the biggest number in a list. Check it out on github <a className='bold' href='https://github.com/Forworddash/python-code-challenges' target='_blank' rel='noopener noreferrer'>Here</a>.",
+    },
+    {
+      id: 5,
+      title: "Ecommerce Site #1",
+      category: "react",
+      image: Image5,
+      description: "Project 5 description",
+    },
+    {
+      id: 6,
+      title: "Ecommerce Site #2",
+      category: "react",
+      image: Image6,
+      description: "Project 6 description",
+    },
+    {
+      id: 7,
+      title: "Ecommerce Site #2",
+      category: "react",
+      image: Image6,
+      description: "Project 6 description",
+    },
 
     // Add more projects and their respective details here
   ];
@@ -152,7 +196,9 @@ const Portfolio: React.FC = () => {
     }
   });
 
-  const visibleProjects = showMore ? filteredProjects : filteredProjects.slice(0, 3);
+  const visibleProjects = showMore
+    ? filteredProjects
+    : filteredProjects.slice(0, 3);
 
   const toggleShowMore = () => {
     setShowMore((prevShowMore) => !prevShowMore);
@@ -163,29 +209,33 @@ const Portfolio: React.FC = () => {
       <h1 className="text-3xl text-center font-bold mb-4">Portfolio</h1>
       <div className="flex justify-center mb-4 space-x-12">
         <button
-          className={`btn btn-primary mr-2 ${activeView === "all" ? "btn-active" : ""
-            }`}
+          className={`btn btn-primary mr-2 ${
+            activeView === "all" ? "btn-active" : ""
+          }`}
           onClick={() => handleViewChange("all")}
         >
           All
         </button>
         <button
-          className={`btn btn-primary mr-2 ${activeView === "python" ? "btn-active" : ""
-            }`}
+          className={`btn btn-primary mr-2 ${
+            activeView === "python" ? "btn-active" : ""
+          }`}
           onClick={() => handleViewChange("python")}
         >
           Python
         </button>
         <button
-          className={`btn btn-primary ${activeView === "react" ? "btn-active" : ""
-            }`}
+          className={`btn btn-primary ${
+            activeView === "react" ? "btn-active" : ""
+          }`}
           onClick={() => handleViewChange("react")}
         >
           React
         </button>
         <button
-          className={`btn btn-primary ${activeView === "Unity/C#" ? "btn-active" : ""
-            }`}
+          className={`btn btn-primary ${
+            activeView === "Unity/C#" ? "btn-active" : ""
+          }`}
           onClick={() => handleViewChange("Unity/C#")}
         >
           Unity/C#
@@ -221,7 +271,9 @@ const Portfolio: React.FC = () => {
         {filteredProjects.length > 3 && (
           <div className="flex justify-center mt-4">
             <button className="btn btn-primary" onClick={toggleShowMore}>
-              {showMore ? "Show Less" : `Show More (${filteredProjects.length - 3} more)`}
+              {showMore
+                ? "Show Less"
+                : `Show More (${filteredProjects.length - 3} more)`}
             </button>
           </div>
         )}
@@ -229,18 +281,25 @@ const Portfolio: React.FC = () => {
       {selectedProject && (
         <div className="popout-overlay">
           <div className="popout-container">
-            <div className="popout-content">
-              <h2 className="text-2xl font-bold">{selectedProject.title}</h2>
+            <div className="popout-content mt-5">
               <img
                 src={selectedProject.image}
                 alt={selectedProject.title}
-                className="object-cover w-full h-64"
+                className="object-cover m-auto w-1/2 h-2/4"
               />
-              <p className="text-gray-600 mt-4">{selectedProject.description}</p>
+              <h2 className="text-2xl font-bold mt-4 text-center">
+                {selectedProject.title}
+              </h2>
+              <p 
+              className="mt-4"
+              dangerouslySetInnerHTML={{ __html: selectedProject.description }}></p>
             </div>
-            <button className="popout-close" onClick={handleClosePopout}>
-              Close
-            </button>
+              <button
+                className="text-white popout-close-btn"
+                onClick={handleClosePopout}
+              >
+                Close
+              </button>
           </div>
         </div>
       )}
