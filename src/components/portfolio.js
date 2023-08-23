@@ -82,7 +82,7 @@ const Portfolio: React.FC = () => {
     {
       id: 8,
       title: "TrueNas Server",
-      category: "hobby",
+      category: "all",
       image: Image8,
       description: "Building my own TrueNAS server from an old desktop was an enriching and excruciating experience that taught me several valuable lessons in server administration and hardware repurposing. Through this project, I gained hands-on knowledge in various areas like: Data storage management, RAID configuration, data redundacy, network configurations, data backups and more.",
     },
@@ -149,14 +149,6 @@ const Portfolio: React.FC = () => {
           onClick={() => handleViewChange("Unity/C#")}
         >
           Unity/C#
-        </button>
-        <button
-          className={`btn btn-primary ${
-            activeView === "hobby" ? "btn-active" : ""
-          }`}
-          onClick={() => handleViewChange("hobby")}
-        >
-          Hobby
         </button>
       </div>
       <div className="rounded-2xl m-auto shadow-2xl p-8">
