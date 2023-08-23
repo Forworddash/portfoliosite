@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f7bb1bb6.css",
+    "main.js": "/static/js/main.3b6509be.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/tekelite.png": "/static/media/tekelite.d9dfd476374eaa6e4211.png",
+    "static/media/rackatiers.png": "/static/media/rackatiers.3e9e37ab84530607917c.png",
+    "static/media/portfoliosite.png": "/static/media/portfoliosite.0eb759927f740c05ef7c.png",
+    "static/media/savannabiltong.png": "/static/media/savannabiltong.59fdd598feb3f94fceae.png",
+    "static/media/test.pdf": "/static/media/test.a31d021f22d8f56eb745.pdf",
+    "static/media/truenas.png": "/static/media/truenas.35645ec021abd1b641f8.png",
+    "static/media/aliaskeep.png": "/static/media/aliaskeep.f3eb98acef0b373fc25d.png",
+    "static/media/pythoncodechallenges.png": "/static/media/pythoncodechallenges.14a79d12a93f4db444a2.png",
+    "index.html": "/index.html",
+    "main.f7bb1bb6.css.map": "/static/css/main.f7bb1bb6.css.map",
+    "main.3b6509be.js.map": "/static/js/main.3b6509be.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7bb1bb6.css",
+    "static/js/main.3b6509be.js"
+  ]
+}
