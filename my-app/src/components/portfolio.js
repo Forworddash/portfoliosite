@@ -1,109 +1,3 @@
-// import React, { useState } from "react";
-// import { motion } from "framer-motion";
-// import Image1 from '../images/React.jpg';
-// import Image2 from '../images/dawdadw.png';
-// import Image3 from '../images/delldock.jpg';
-// import Image4 from '../images/inventorscorner.png';
-// import Image5 from '../images/phone.png';
-// import Image6 from '../images/step1.png';
-
-// const Portfolio: React.FC = () => {
-//   const [activeView, setActiveView] = useState("all");
-//   const [showMore, setShowMore] = useState(false);
-
-//   const handleViewChange = (view: string) => {
-//     setActiveView(view);
-//   };
-
-//   // project data
-//   const projects = [
-//     { id: 1, title: "Project 1", category: "all", image: Image1 },
-//     { id: 2, title: "Project 2", category: "all", image: Image2 },
-//     { id: 3, title: "Project 3", category: "react", image: Image3 },
-//     { id: 4, title: "Project 4", category: "python", image: Image4 },
-//     { id: 5, title: "Project 5", category: "react", image: Image5 },
-//     { id: 6, title: "Project 6", category: "react", image: Image6 },
-
-//     // Add more projects and their respective images here
-//   ];
-
-//   const filteredProjects = projects.filter((project) => {
-//     if (activeView === "all") {
-//       return true;
-//     } else {
-//       return project.category === activeView;
-//     }
-//   });
-
-//   const visibleProjects = showMore ? filteredProjects : filteredProjects.slice(0, 3);
-
-//   const toggleShowMore = () => {
-//     setShowMore((prevShowMore) => !prevShowMore);
-//   };
-
-//   return (
-//     <div className="m-auto p-6 container">
-//       <h1 className="text-3xl text-center font-bold mb-4">Portfolio</h1>
-//       <div className="flex justify-center mb-4">
-//         <button
-//           className={`btn btn-primary mr-2 ${activeView === "all" ? "btn-active" : ""
-//             }`}
-//           onClick={() => handleViewChange("all")}
-//         >
-//           All
-//         </button>
-//         <button
-//           className={`btn btn-primary mr-2 ${activeView === "python" ? "btn-active" : ""
-//             }`}
-//           onClick={() => handleViewChange("python")}
-//         >
-//           Python
-//         </button>
-//         <button
-//           className={`btn btn-primary ${activeView === "react" ? "btn-active" : ""
-//             }`}
-//           onClick={() => handleViewChange("react")}
-//         >
-//           React
-//         </button>
-//       </div>
-//       <div className="rounded-2xl m-auto shadow-2xl p-8">
-//         <motion.div
-//           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
-//           initial={{ opacity: 0 }}
-//           animate={{ opacity: 1 }}
-//           transition={{ delay: 0.2, duration: 0.8 }}
-//         >
-//           {visibleProjects.map((project) => (
-//             <div key={project.id} className="flex items-center justify-center">
-//               <motion.div
-//                 className="shadow-2xl rounded-lg w-64 h-48 md:w-96 md:h-64"
-//                 whileHover={{ scale: 1.05 }}
-//                 whileTap={{ scale: 0.95 }}
-//               >
-//                 <img
-//                   src={project.image}
-//                   alt={project.title}
-//                   className="object-cover w-full h-full"
-//                 />
-//               </motion.div>
-//             </div>
-//           ))}
-//         </motion.div>
-//         {filteredProjects.length > 3 && (
-//           <div className="flex justify-center mt-4">
-//             <button className="btn btn-primary" onClick={toggleShowMore}>
-//               {showMore ? "Show Less" : `Show More (${filteredProjects.length - 3} more)`}
-//             </button>
-//           </div>
-//         )}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Portfolio;
-
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image1 from "../images/rackatiers.png";
@@ -111,8 +5,9 @@ import Image2 from "../images/portfoliosite.png";
 import Image3 from '../images/aliaskeep.png';
 import Image4 from "../images/pythoncodechallenges.png";
 import Image5 from "../images/snakegame.png";
-import Image6 from "../images/biltong.png";
+import Image6 from "../images/savannabiltong.png";
 import Image7 from "../images/tekelite.png";
+import Image8 from "../images/truenas.png";
 
 const Portfolio: React.FC = () => {
   const [activeView, setActiveView] = useState("all");
@@ -184,6 +79,13 @@ const Portfolio: React.FC = () => {
       image: Image3,
       description: "'Alias Keep' is a desktop application built using Electron, Bulma CSS, and JavaScript. The primary purpose of the application is to help users manage and store information related to fake aliases, including details such as fake names, email addresses, phone numbers, and dates of birth. The application features a user-friendly interface with different tabs for managing various aspects as well as a rudimentary login screen.",
     },
+    {
+      id: 8,
+      title: "TrueNas Server",
+      category: "hobby",
+      image: Image8,
+      description: "Building my own TrueNAS server from an old desktop was an enriching and excruciating experience that taught me several valuable lessons in server administration and hardware repurposing. Through this project, I gained hands-on knowledge in various areas like: Data storage management, RAID configuration, data redundacy, network configurations, data backups and more.",
+    },
 
     // Add more projects and their respective details here
   ];
@@ -247,6 +149,14 @@ const Portfolio: React.FC = () => {
           onClick={() => handleViewChange("Unity/C#")}
         >
           Unity/C#
+        </button>
+        <button
+          className={`btn btn-primary ${
+            activeView === "hobby" ? "btn-active" : ""
+          }`}
+          onClick={() => handleViewChange("hobby")}
+        >
+          Hobby
         </button>
       </div>
       <div className="rounded-2xl m-auto shadow-2xl p-8">
