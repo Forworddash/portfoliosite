@@ -8,6 +8,7 @@ import Image5 from "../images/snakegame.png";
 import Image6 from "../images/savannabiltong.png";
 import Image7 from "../images/tekelite.png";
 import Image8 from "../images/truenas.png";
+import Image9 from "../images/mountainterrain.png";
 
 const Portfolio: React.FC = () => {
   const [activeView, setActiveView] = useState("all");
@@ -85,6 +86,14 @@ const Portfolio: React.FC = () => {
       category: "all",
       image: Image8,
       description: "Building my own TrueNAS server from an old desktop was an enriching and excruciating experience that taught me several valuable lessons in server administration and hardware repurposing. Through this project, I gained hands-on knowledge in various areas like: Data storage management, RAID configuration, data redundacy, network configurations, data backups and more.",
+    },
+    {
+      id: 3,
+      title: "Mountain Terrain",
+      category: "Unity/C#",
+      image: Image9,
+      description:
+        "a forest and mountain range created in Unity to showcase localized rain effects and tree dispersement. The player has standard variables for walking speed, running speed, jump strength, gravity and more.",
     },
 
     // Add more projects and their respective details here
