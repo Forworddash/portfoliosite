@@ -78,7 +78,7 @@ const Portfolio: React.FC = () => {
       title: "Alias Keep",
       category: "javascript",
       image: Image3,
-      description: "'Alias Keep' is a desktop application built using Electron, Bulma CSS, and JavaScript. The primary purpose of the application is to help users manage and store information related to fake aliases, including details such as fake names, email addresses, phone numbers, and dates of birth. The application features a user-friendly interface with different tabs for managing various aspects as well as a rudimentary login screen.",
+      description: "'Alias Keep' is a desktop application built using Electron, Bulma CSS, and JavaScript. The primary purpose of the application is to help users manage and store information related to fake aliases, including details such as fake names, email addresses, phone numbers, and dates of birth. The application features a user-friendly interface with different tabs for managing various aspects as well as a rudimentary login screen. <a href='https://github.com/Forworddash/AliasKeep' target='_blank' rel='noopener noreferrer'>See it on Github</a>.",
     },
     {
       id: 8,
