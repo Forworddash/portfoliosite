@@ -1,7 +1,7 @@
 import React from 'react';
 // import Picture from '../images/sa.jpg';
 
-const About: React.FC = () => {
+const About = () => {
   return (
     <div className="container m-auto p-6">
       <div>

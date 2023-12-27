@@ -10,12 +10,12 @@ import Image7 from "../images/tekelite.png";
 import Image8 from "../images/truenas.png";
 import Image9 from "../images/mountainterrain.png";
 
-const Portfolio: React.FC = () => {
+const Portfolio = () => {
   const [activeView, setActiveView] = useState("all");
   const [showMore, setShowMore] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const handleViewChange = (view: string) => {
+  const handleViewChange = (view) => {
     setActiveView(view);
   };
 

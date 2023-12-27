@@ -2,7 +2,7 @@ import React from 'react';
 import Document from '../docs/SamuelBakerResume.docx'
 
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
 
 
   return (
