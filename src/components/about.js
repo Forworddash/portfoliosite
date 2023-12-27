@@ -14,12 +14,7 @@ const About: React.FC = () => {
 
         <div className='order-1 xl:order-2 lg:order-2 md:order-1 sm:order-1 rounded-2xl m-auto shadow-2xl p-8'>
           <p className="text-lg leading-7">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id magna
-            consequat, cursus nulla sit amet, accumsan velit. Quisque interdum
-            sagittis urna. Aliquam erat volutpat. Fusce dapibus, odio eu pulvinar
-            sollicitudin, turpis dui facilisis lorem, at fringilla quam nulla eu
-            ipsum. Integer non dolor ac tellus imperdiet finibus. Nullam quis
-            pulvinar nulla, a tempor turpis.
+          Hey there, I'm Samuel – a digital wizard by day, conjuring code and crafting pixels in the charming realm of Victoria, BC. With React as my wand and JavaScript as my spellbook, I shape captivating web spells that dance harmoniously with HTML and CSS incantations. When I'm not taming browsers, I'm brewing Python potions and summoning C# enchantments, often exploring the virtual realms of Unity. So whether it's pixels or python, spells or scripts, I'm your sorcerer of software, ready to bring magic to the digital realm.
           </p>
         </div>
       </div>

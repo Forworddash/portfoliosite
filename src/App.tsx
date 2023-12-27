@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/navbar";
 import About from "./components/about";
 import Footer from "./components/footer";
-import Contact from "./components/contact";
+// import Contact from "./components/contact";
 import "./index.css"; 
 import Portfolio from "./components/portfolio";
 
@@ -17,8 +17,10 @@ function App() {
         <Navbar />
       </div>
       <div
+
+        /* make the background side to side  */
         style={{
-          background: "linear-gradient(to bottom, #FF8885, #F2E2D0, #E9EAAC)",
+          background: "linear-gradient(90deg, #667eea 0%, #764ba2 100%)"
         }}
         className="space-y-12"
       >
@@ -30,9 +32,9 @@ function App() {
             <Portfolio />
         </div>
 
-        <div className="py-12" id='contact'>
+        {/* <div className="py-12" id='contact'>
             <Contact />
-        </div>
+        </div> */}
 
         <div>
           <Footer />

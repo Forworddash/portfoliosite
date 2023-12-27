@@ -1,5 +1,5 @@
 import React from 'react';
-import Document from '../docs/test.pdf'
+import Document from '../docs/SamuelBakerResume.docx'
 
 
 const Navbar: React.FC = () => {
@@ -31,16 +31,15 @@ const Navbar: React.FC = () => {
               Portfolio
             </a>
           </li>
-          <li className="my-2">
+          {/* <li className="my-2">
             <a
               className="text-white hover:text-gray-800 font-medium text-sm px-4 py-2 rounded-lg transition-colors duration-300 flex items-center"
               href="#contact"
               rel="noopener noreferrer"
             >
-              {/* <FontAwesomeIcon icon={} className="mr-2" /> */}
               Contact
             </a>
-          </li>
+          </li> */}
           <li className="my-2">
             <a
               className="text-white hover:text-gray-800 font-medium text-sm px-4 py-2 rounded-lg transition-colors duration-300 flex items-center"
