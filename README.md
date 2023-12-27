@@ -3,7 +3,7 @@ My portfolio website showcases a collection of diverse projects I've undertaken 
 
 # Check out the site <a className='bold' href='https://www.samuelbaker.ca/' target='_blank' rel='noopener noreferrer'>Here</a>
 
-# Incstructions
+# Instructions
 Open root directory
 run 'npm start'
 
