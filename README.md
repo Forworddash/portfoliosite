@@ -7,5 +7,3 @@ My portfolio website showcases a collection of diverse projects I've undertaken 
 Open root directory
 run 'npm start'
 
-<img width="813" alt="portfoliosite" src="https://github.com/Forworddash/portfoliosite/assets/59719097/cd23aff1-edb9-423c-89be-f7fc72d04964">
-<img width='813" alt="portfoliosite" src"src/images/portfoliosite.png">
