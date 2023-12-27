@@ -20,9 +20,10 @@ function App() {
 
         /* make the background side to side  */
         style={{
-          background: "linear-gradient(90deg, #667eea 0%, #764ba2 100%)"
+          // background: "linear-gradient(90deg, #667eea 0%, #764ba2 100%)"
+          background: '#1a1a1a', letterSpacing: "0.1em"
         }}
-        className="space-y-12"
+        className="space-y-12 text-white"
       >
         <div className="py-24" id='about'>
             <About />
