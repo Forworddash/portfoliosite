@@ -9,6 +9,7 @@ import Image6 from "../images/savannabiltong.png";
 import Image7 from "../images/tekelite.png";
 import Image8 from "../images/truenas.png";
 import Image9 from "../images/mountainterrain.png";
+import Image10 from "../images/p2pfiletransfer.png";
 
 const Portfolio = () => {
   const [activeView, setActiveView] = useState("all");
@@ -88,12 +89,20 @@ const Portfolio = () => {
       description: "Building my own TrueNAS server from an old desktop was an enriching and excruciating experience that taught me several valuable lessons in server administration and hardware repurposing. Through this project, I gained hands-on knowledge in various areas like: Data storage management, RAID configuration, data redundacy, network configurations, data backups and more.",
     },
     {
-      id: 3,
+      id: 9,
       title: "Mountain Terrain",
       category: "Unity/C#",
       image: Image9,
       description:
         "a forest and mountain range created in Unity to showcase localized rain effects and tree dispersement. The player has standard variables for walking speed, running speed, jump strength, gravity and more.",
+    },
+    {
+      id: 10,
+      title: "P2P File transfer System",
+      category: "Python",
+      image: Image10,
+      description:
+        "A peer-to-peer file transfer system that allows users to share files with each other. The system consists of a central server and one client. Check it out on github <a className='bold' href='https://github.com/Forworddash/P2P-File-Transfer-Py' target='_blank' rel='noopener noreferrer'>Here</a>.",
     },
 
     // Add more projects and their respective details here
