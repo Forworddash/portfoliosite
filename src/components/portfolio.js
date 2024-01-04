@@ -102,7 +102,7 @@ const Portfolio = () => {
       category: "python",
       image: Image10,
       description:
-        "A peer-to-peer file transfer system that allows users to share files with each other. The system consists of a central server and one client. Check it out on github <a className='bold' href='https://github.com/Forworddash/P2P-File-Transfer-Py' target='_blank' rel='noopener noreferrer'>Here</a>.",
+        "The Python project is a P2P (peer-to-peer) file transfer system comprising two main components: a server and a client. The project utilizes the Python programming language and the Tkinter library for creating a simple graphical user interface (GUI) for the client. Check it out on github <a className='bold' href='https://github.com/Forworddash/P2P-File-Transfer-Py' target='_blank' rel='noopener noreferrer'>Here</a>.",
     },
 
     // Add more projects and their respective details here
