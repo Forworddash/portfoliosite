@@ -130,9 +130,9 @@ const Portfolio = () => {
       <h1 className="text-3xl text-center font-bold mb-4">Portfolio</h1>
       
       {/* category button section */}
-      <div className="flex justify-center mb-4 space-x-12">
+      <div className="flex overflow-hidden overflow-x-auto justify-center mb-4 xl:space-x-12 lg:space-x-12 md:space-x-12 space-x-4 sm:space-x-2">
         <button
-          className={`btn btn-primary mr-2 ${
+          className={`btn btn-primary ${
             activeView === "all" ? "btn-active" : ""
           }`}
           onClick={() => handleViewChange("all")}
@@ -140,7 +140,7 @@ const Portfolio = () => {
           All
         </button>
         <button
-          className={`btn btn-primary mr-2 ${
+          className={`btn btn-primary ${
             activeView === "python" ? "btn-active" : ""
           }`}
           onClick={() => handleViewChange("python")}
