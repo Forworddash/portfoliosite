@@ -126,10 +126,13 @@ const Portfolio = () => {
 
   return (
     <div className="m-auto p-6 container">
+      {/* portfolio section */}
       <h1 className="text-3xl text-center font-bold mb-4">Portfolio</h1>
-      <div className="flex justify-center mb-4 space-x-12">
+      
+      {/* category button section */}
+      <div className="flex overflow-hidden overflow-x-auto justify-center mb-4 xl:space-x-12 lg:space-x-12 md:space-x-12 space-x-4 sm:space-x-2">
         <button
-          className={`btn btn-primary mr-2 ${
+          className={`btn btn-primary ${
             activeView === "all" ? "btn-active" : ""
           }`}
           onClick={() => handleViewChange("all")}
@@ -137,7 +140,7 @@ const Portfolio = () => {
           All
         </button>
         <button
-          className={`btn btn-primary mr-2 ${
+          className={`btn btn-primary ${
             activeView === "python" ? "btn-active" : ""
           }`}
           onClick={() => handleViewChange("python")}
@@ -169,9 +172,11 @@ const Portfolio = () => {
           Unity/C#
         </button>
       </div>
+
+      {/* Project Grid */}
       <div className="rounded-2xl m-auto shadow-2xl p-8">
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.8 }}
@@ -187,11 +192,14 @@ const Portfolio = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
+                
                 <img
                   src={project.image}
                   alt={project.title}
                   className="object-cover w-full h-full"
                 />
+                <p className="text-center text-sm">
+                  {project.title}</p>
               </motion.div>
             </div>
           ))}
@@ -206,6 +214,8 @@ const Portfolio = () => {
           </div>
         )}
       </div>
+
+      {/* Popout project selection */}
       {selectedProject && (
         <div className="popout-overlay">
           <div className="popout-container">
