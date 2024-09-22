@@ -40,6 +40,9 @@
 @import url(https://db.onlinewebfonts.com/c/8f157429134e412243035be819dacbde?family=MonoLisa-Regular);
 
 body {
-  font-family: 'MonoLisa-Regular';
+  /* font-family: 'Inter-Regular'; */
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
