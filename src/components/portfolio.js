@@ -10,6 +10,7 @@ import Image7 from "../images/tekelite.png";
 import Image8 from "../images/truenas.png";
 import Image9 from "../images/mountainterrain.png";
 import Image10 from "../images/p2pfiletransfer.png";
+import Image11 from "../images/contactsapp1.png";
 
 const Portfolio = () => {
   const [activeView, setActiveView] = useState("all");
@@ -55,41 +56,48 @@ const Portfolio = () => {
     },
     {
       id: 4,
+      title: "Typescript Contact App",
+      category: "react",
+      image: Image11,
+      description: "The 'Contacts App' is a Typescript project that uses a contacts.json file and a node.js API to send the data to a Tanstack table. You can use basic column filters and load a selected contact in a more detailed page.",
+    },
+    {
+      id: 5,
       title: "Python Functions",
       category: "python",
       image: Image4,
       description: "Wrote python functions for multiple challenges from testing strings for palindromes to finding the biggest number in a list. Check it out on github <a className='bold' href='https://github.com/Forworddash/python-code-challenges' target='_blank' rel='noopener noreferrer'>Here</a>.",
     },
     {
-      id: 5,
+      id: 6,
       title: "Snake Game",
       category: "javascript",
       image: Image5,
       description: "The 'Snake Game' project leverages HTML, CSS, and JavaScript to create an interactive snake game experience. Players control a snake as it maneuvers through the game grid to collect apples and grow longer. The project showcases the use of canvas rendering, collision detection, and dynamic gameplay mechanics to recreate the classic Snake game in a web browser.",
     },
     {
-      id: 6,
+      id: 7,
       title: "Biltong Landing Page",
       category: "react",
       image: Image6,
       description: "Thor's landing page project is a dynamic web application developed using JavaScript, React, HTML, and Tailwind CSS. Leveraging the power of React's component-based architecture and Tailwind CSS's styling, the project delivers a responsive and aesthetically pleasing user experience. This landing page is designed for my friend Thor as he pursues his business in Biltong, the African dried meat delicacy! Check it out on GitHub <a className='bold' href='https://github.com/Forworddash/Thor-landingpage' target='_blank' rel='noopener noreferrer'>Here</a>.",
     },
     {
-      id: 7,
+      id: 8,
       title: "Alias Keep",
       category: "javascript",
       image: Image3,
       description: "'Alias Keep' is a desktop application built using Electron, Bulma CSS, and JavaScript. The primary purpose of the application is to help users manage and store information related to fake aliases, including details such as fake names, email addresses, phone numbers, and dates of birth. The application features a user-friendly interface with different tabs for managing various aspects as well as a rudimentary login screen. <a href='https://github.com/Forworddash/AliasKeep' target='_blank' rel='noopener noreferrer'>See it on Github</a>.",
     },
     {
-      id: 8,
+      id: 9,
       title: "TrueNas Server",
       category: "all",
       image: Image8,
       description: "Building my own TrueNAS server from an old desktop was an enriching and excruciating experience that taught me several valuable lessons in server administration and hardware repurposing. Through this project, I gained hands-on knowledge in various areas like: Data storage management, RAID configuration, data redundacy, network configurations, data backups and more.",
     },
     {
-      id: 9,
+      id: 10,
       title: "Mountain Terrain",
       category: "Unity/C#",
       image: Image9,
@@ -97,13 +105,14 @@ const Portfolio = () => {
         "a forest and mountain range created in Unity to showcase localized rain effects and tree dispersement. The player has standard variables for walking speed, running speed, jump strength, gravity and more.",
     },
     {
-      id: 10,
+      id: 11,
       title: "P2P File transfer System",
       category: "python",
       image: Image10,
       description:
         "The Python project is a P2P (peer-to-peer) file transfer system comprising two main components: a server and a client. The project utilizes the Python programming language and the Tkinter library for creating a simple graphical user interface (GUI) for the client. Check it out on github <a className='bold' href='https://github.com/Forworddash/P2P-File-Transfer-Py' target='_blank' rel='noopener noreferrer'>Here</a>.",
     },
+    
 
     // Add more projects and their respective details here
   ];
