@@ -12,7 +12,8 @@ import Portfolio from "./components/portfolio";
 function App() {
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    // <Router basename={process.env.PUBLIC_URL}>
+    <Router basename="">
       <div className="">
         <Navbar />
       </div>
