@@ -13,6 +13,7 @@
     "@types/react-dom": "^18.2.4",
     "autoprefixer": "^10.4.14",
     "framer-motion": "^10.12.10",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.23",
     "react": "^18.2.0",
     "react-burger-menu": "^3.0.9",
@@ -24,6 +25,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build:digitalocean": "npm start"
@@ -48,5 +51,6 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.3.2"
-  }
+  },
+  "homepage": "https://forworddash.github.io/portfoliosite"
 }
