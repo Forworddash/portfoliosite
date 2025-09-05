@@ -14,7 +14,8 @@ const About = () => {
 
         <div className='order-1 xl:order-2 lg:order-2 md:order-1 sm:order-1 rounded-2xl m-auto shadow-2xl p-8'>
           <p className="text-lg leading-7">
-          Hey there, I'm Samuel – a digital wizard by day, conjuring code and crafting pixels in the charming realm of Victoria, BC. With React as my wand and JavaScript as my spellbook, I shape captivating web spells that dance harmoniously with HTML and CSS incantations. When I'm not taming browsers, I'm brewing Python potions and summoning C# enchantments, often exploring the virtual realms of Unity. So whether it's pixels or python, spells or scripts, I'm your sorcerer of software, ready to bring magic to the digital realm.
+            Hello! I'm Sam, a developer with a passion for building clean, efficient, and user-focused experiences. I believe in using the right tool for the job. My projects range from full-stack web applications to business solutionsoften built with modern technologies like Python, JavaScript (React/Node.js), TypeScript and Rust. I'm constantly learning and exploring new technologies. When I'm not coding, I'm probably setting up home labs and making power efficient servers. 
+            I'm always open to discussing new opportunities, collaborative projects, or just talking tech. Feel free to explore my work and get in touch.
           </p>
         </div>
       </div>

@@ -11,6 +11,9 @@ import Image8 from "../images/truenas.png";
 import Image9 from "../images/mountainterrain.png";
 import Image10 from "../images/p2pfiletransfer.png";
 import Image11 from "../images/contactsapp1.png";
+import Image12 from "../images/travel-blog.png";
+import Image13 from "../images/edi-parser.png";
+
 
 const Portfolio = () => {
   const [activeView, setActiveView] = useState("all");
@@ -40,6 +43,20 @@ const Portfolio = () => {
     },
     {
       id: 2,
+      title: "EDI Parser",
+      category: "rust",
+      image: Image13,
+      description: "This project is an EDI parser I wrote in Rust to translate EDI documents (850, 810, 856 etc) into rust structs. I will be adding a JSON input/output layer and use a restAPI for easier access. Using Rust I was able to greatly improve the parsing speed compared to python EDI parsing. Check it out on github <a className='bold' href='https://github.com/Forworddash/EDI-Parser' target='_blank' rel='noopener noreferrer'>Here</a>.",
+    },
+    {
+      id: 3,
+      title: "Travel Blog",
+      category: "typescript",
+      image: Image12,
+      description: "This travel blog I made is built with Hugo, TypeScript, and the PaperMod theme, then automatically deployed on Netlify. Features a custom admin portal for content management. The site itself is a testament to a focus on performance, security, and developer experience. Check it out <a className='bold' href='https://www.travellingwithtoomany.com/' target='_blank' rel='noopener noreferrer'>Here</a>.",
+    },
+    {
+      id: 4,
       title: "This Website",
       category: "react",
       image: Image2,
@@ -47,7 +64,7 @@ const Portfolio = () => {
         "My portfolio website showcases a collection of diverse projects I've undertaken using technologies such as React, Tailwind CSS, HTML, Unity, C#, Python and JavaScript. It offers a visually engaging platform for visitors to explore my work and learn more about each project's details and technologies involved. Feel free to explore my portfolio and get a glimpse of my coding journey!. Check out the code on Github <a href='https://github.com/Forworddash/portfoliosite' target='_blank' rel='noopener noreferrer'>Here</a>.",
     },
     {
-      id: 3,
+      id: 5,
       title: "Teke Lite App",
       category: "Unity/C#",
       image: Image7,
@@ -55,39 +72,25 @@ const Portfolio = () => {
         "Received Figma designs from the UI designer and implemented the designs in the Teke Lite app. I worked with the Unity engine and wrote C# code for the sound effects and transitions to different scenes. Check out their website  <a className='bold' href='https://teke.io/' target='_blank' rel='noopener noreferrer'>Here</a>.",
     },
     {
-      id: 4,
+      id: 6,
+      title: "Alias Keep",
+      category: "javascript",
+      image: Image3,
+      description: "'Alias Keep' is a desktop application built using Electron, Bulma CSS, and JavaScript. The primary purpose of the application is to help users manage and store information related to fake aliases, including details such as fake names, email addresses, phone numbers, and dates of birth. The application features a user-friendly interface with different tabs for managing various aspects as well as a rudimentary login screen. <a href='https://github.com/Forworddash/AliasKeep' target='_blank' rel='noopener noreferrer'>See it on Github</a>.",
+    },
+    {
+      id: 7,
       title: "Typescript Contact App",
       category: "react",
       image: Image11,
       description: "The 'Contacts App' is a Typescript project that uses a contacts.json file and a node.js API to send the data to a Tanstack table. You can use basic column filters and load a selected contact in a more detailed page.",
     },
     {
-      id: 5,
+      id: 8,
       title: "Python Functions",
       category: "python",
       image: Image4,
       description: "Wrote python functions for multiple challenges from testing strings for palindromes to finding the biggest number in a list. Check it out on github <a className='bold' href='https://github.com/Forworddash/python-code-challenges' target='_blank' rel='noopener noreferrer'>Here</a>.",
-    },
-    {
-      id: 6,
-      title: "Snake Game",
-      category: "javascript",
-      image: Image5,
-      description: "The 'Snake Game' project leverages HTML, CSS, and JavaScript to create an interactive snake game experience. Players control a snake as it maneuvers through the game grid to collect apples and grow longer. The project showcases the use of canvas rendering, collision detection, and dynamic gameplay mechanics to recreate the classic Snake game in a web browser.",
-    },
-    {
-      id: 7,
-      title: "Biltong Landing Page",
-      category: "react",
-      image: Image6,
-      description: "Thor's landing page project is a dynamic web application developed using JavaScript, React, HTML, and Tailwind CSS. Leveraging the power of React's component-based architecture and Tailwind CSS's styling, the project delivers a responsive and aesthetically pleasing user experience. This landing page is designed for my friend Thor as he pursues his business in Biltong, the African dried meat delicacy! Check it out on GitHub <a className='bold' href='https://github.com/Forworddash/Thor-landingpage' target='_blank' rel='noopener noreferrer'>Here</a>.",
-    },
-    {
-      id: 8,
-      title: "Alias Keep",
-      category: "javascript",
-      image: Image3,
-      description: "'Alias Keep' is a desktop application built using Electron, Bulma CSS, and JavaScript. The primary purpose of the application is to help users manage and store information related to fake aliases, including details such as fake names, email addresses, phone numbers, and dates of birth. The application features a user-friendly interface with different tabs for managing various aspects as well as a rudimentary login screen. <a href='https://github.com/Forworddash/AliasKeep' target='_blank' rel='noopener noreferrer'>See it on Github</a>.",
     },
     {
       id: 9,
@@ -113,7 +116,6 @@ const Portfolio = () => {
         "The Python project is a P2P (peer-to-peer) file transfer system comprising two main components: a server and a client. The project utilizes the Python programming language and the Tkinter library for creating a simple graphical user interface (GUI) for the client. Check it out on github <a className='bold' href='https://github.com/Forworddash/P2P-File-Transfer-Py' target='_blank' rel='noopener noreferrer'>Here</a>.",
     },
     
-
     // Add more projects and their respective details here
   ];
 
@@ -179,6 +181,22 @@ const Portfolio = () => {
           onClick={() => handleViewChange("Unity/C#")}
         >
           Unity/C#
+        </button>
+        <button
+          className={`btn btn-primary ${
+            activeView === "rust" ? "btn-active" : ""
+          }`}
+          onClick={() => handleViewChange("rust")}
+        >
+          Rust
+        </button>
+        <button
+          className={`btn btn-primary ${
+            activeView === "typescript" ? "btn-active" : ""
+          }`}
+          onClick={() => handleViewChange("typescript")}
+        >
+          Typescript
         </button>
       </div>
 
