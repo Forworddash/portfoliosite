@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.d2dc4e57.css",
-    "main.js": "/static/js/main.bc14e158.js",
+    "main.css": "/static/css/main.03f27e04.css",
+    "main.js": "/static/js/main.cb455524.js",
     "static/js/787.fb771931.chunk.js": "/static/js/787.fb771931.chunk.js",
     "static/media/mountainterrain.png": "/static/media/mountainterrain.2596f9d5f70c83137025.png",
     "static/media/tekelite.png": "/static/media/tekelite.d9dfd476374eaa6e4211.png",
     "static/media/rackatiers.png": "/static/media/rackatiers.3e9e37ab84530607917c.png",
     "static/media/portfoliosite.png": "/static/media/portfoliosite.37ac61322462d4d32350.png",
     "static/media/savannabiltong.png": "/static/media/savannabiltong.59fdd598feb3f94fceae.png",
+    "static/media/travel-blog.png": "/static/media/travel-blog.0b8062845407b1345fb9.png",
     "static/media/truenas.png": "/static/media/truenas.35645ec021abd1b641f8.png",
     "static/media/contactsapp1.png": "/static/media/contactsapp1.1e0b8c3b2bea71c1e6f0.png",
+    "static/media/edi-parser.png": "/static/media/edi-parser.1a19d470bed81ef01a89.png",
     "static/media/p2pfiletransfer.png": "/static/media/p2pfiletransfer.3ba850a307373f6109c7.png",
     "static/media/aliaskeep.png": "/static/media/aliaskeep.f3eb98acef0b373fc25d.png",
     "static/media/pythoncodechallenges.png": "/static/media/pythoncodechallenges.14a79d12a93f4db444a2.png",
-    "static/media/SamuelBakerResume.docx": "/static/media/SamuelBakerResume.64a59f6b58049e995ed7.docx",
     "index.html": "/index.html",
-    "main.d2dc4e57.css.map": "/static/css/main.d2dc4e57.css.map",
-    "main.bc14e158.js.map": "/static/js/main.bc14e158.js.map",
+    "main.03f27e04.css.map": "/static/css/main.03f27e04.css.map",
+    "main.cb455524.js.map": "/static/js/main.cb455524.js.map",
     "787.fb771931.chunk.js.map": "/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2dc4e57.css",
-    "static/js/main.bc14e158.js"
+    "static/css/main.03f27e04.css",
+    "static/js/main.cb455524.js"
   ]
 }
