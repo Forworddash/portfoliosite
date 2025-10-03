@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.03f27e04.css",
-    "main.js": "/static/js/main.cb455524.js",
+    "main.js": "/static/js/main.3d3c1e07.js",
     "static/js/787.fb771931.chunk.js": "/static/js/787.fb771931.chunk.js",
     "static/media/mountainterrain.png": "/static/media/mountainterrain.2596f9d5f70c83137025.png",
     "static/media/tekelite.png": "/static/media/tekelite.d9dfd476374eaa6e4211.png",
@@ -17,11 +17,11 @@
     "static/media/pythoncodechallenges.png": "/static/media/pythoncodechallenges.14a79d12a93f4db444a2.png",
     "index.html": "/index.html",
     "main.03f27e04.css.map": "/static/css/main.03f27e04.css.map",
-    "main.cb455524.js.map": "/static/js/main.cb455524.js.map",
+    "main.3d3c1e07.js.map": "/static/js/main.3d3c1e07.js.map",
     "787.fb771931.chunk.js.map": "/static/js/787.fb771931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.03f27e04.css",
-    "static/js/main.cb455524.js"
+    "static/js/main.3d3c1e07.js"
   ]
 }
